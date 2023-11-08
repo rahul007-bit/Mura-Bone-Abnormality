@@ -61,7 +61,7 @@ def load_model():
         "google/vit-base-patch16-224-in21k"
     )
 
-    checkpoint = torch.load("pytorch_model1.bin", map_location=torch.device("mps"))
+    checkpoint = torch.load("pytorch_model.bin", map_location=torch.device("mps"))
     # Load the model's state_dict from the checkpoint
     model.load_state_dict(checkpoint)
 
